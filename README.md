@@ -1,5 +1,5 @@
 # snowflake id
-This is a golang package that generates snowflake id
+This is a Golang package for generating snowflake IDs.
 ```
 go get github.com/404669366/snowflake@latest
 ```
