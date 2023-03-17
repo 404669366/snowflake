@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	Init(1)
+	NewSnowflake(1)
 }
 
 type IDS struct {
@@ -41,7 +41,7 @@ func TestCreateId(t *testing.T) {
 		wait.Add(1)
 		go func() {
 			defer wait.Done()
-			ids.Add(CreateId())
+			ids.Add(Generate())
 		}()
 	}
 	wait.Wait()
