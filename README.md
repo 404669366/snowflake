@@ -12,11 +12,11 @@ import (
 )
 
 func init() {
-	snowflake.Init(1)
+	snowflake.NewSnowflake(1)
 }
 
 func main() {
-	fmt.Printf("snowflake.CreateId(): %v\n", snowflake.CreateId())
+	fmt.Printf("snowflake.CreateId(): %v\n", snowflake.Generate())
 }
 
 ```
